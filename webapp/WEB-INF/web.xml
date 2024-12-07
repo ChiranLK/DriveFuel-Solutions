@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+  <display-name>DFSolutions</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>Parts Management</description>
+    <display-name>PartServlet</display-name>
+    <servlet-name>PartServlet</servlet-name>
+    <servlet-class>com.project.part.PartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>Fuel Management</description>
+    <display-name>FuelServlet</display-name>
+    <servlet-name>FuelServlet</servlet-name>
+    <servlet-class>com.project.fuel.FuelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>Login</description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.project.login.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>Payment Management</description>
+    <display-name>PaymentServlet</display-name>
+    <servlet-name>PaymentServlet</servlet-name>
+    <servlet-class>com.project.payment.PaymentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>Order Management</description>
+    <display-name>OrderServlet</display-name>
+    <servlet-name>OrderServlet</servlet-name>
+    <servlet-class>com.project.order.OrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>Register</description>
+    <display-name>RegisterServlet</display-name>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.project.auth.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>User Management</description>
+    <display-name>UserServlet</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.project.user.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>CartServlet</display-name>
+    <servlet-name>CartServlet</servlet-name>
+    <servlet-class>com.DFSolutions.cart.CartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>ReportServlet</display-name>
+    <servlet-name>ReportServlet</servlet-name>
+    <servlet-class>com.DFSolutions.report.ReportServlet</servlet-class>
+  </servlet>
+</web-app>
