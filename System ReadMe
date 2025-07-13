@@ -1,0 +1,90 @@
+Cursor Ai
+
+Search files...
+Here’s an overview of the technologies and concepts used in your project, based on the project structure and key configuration files:
+
+---
+
+## Technologies Used
+
+### 1. **Java (JDK 21)**
+- The backend is written in Java, using Java 21 as specified in `.settings/org.eclipse.wst.common.project.facet.core.xml` and `.classpath`.
+
+### 2. **Jakarta EE / Java Servlets**
+- The project uses Jakarta EE (formerly Java EE) for web development.
+- Servlets are used for backend logic (e.g., `LoginServlet.java`, `OrderServlet.java`, etc.).
+- `web.xml` is used for servlet configuration and deployment descriptors.
+
+### 3. **JSP (JavaServer Pages)**
+- The frontend uses JSP for dynamic web pages (e.g., `index.jsp`, `login.jsp`, `admin.jsp`, etc.).
+- JSPs include Java code and custom tags for rendering dynamic content.
+
+### 4. **JDBC (Java Database Connectivity)**
+- Database access is handled via JDBC, as seen in `DBConnector.java` and servlet classes.
+- The project connects to a MySQL database.
+
+### 5. **MySQL**
+- The backend database is MySQL.
+- The MySQL JDBC driver (`mysql-connector-j-9.0.0.jar`) is included in `WEB-INF/lib`.
+
+### 6. **Apache Tomcat**
+- The project is configured to run on Apache Tomcat (version 10.1.24), as seen in the Eclipse facet and classpath files.
+
+### 7. **HTML, CSS, JavaScript**
+- The frontend uses standard web technologies for structure (`.jsp` files), styling (`index.css`, `main.css`), and interactivity (inline JavaScript in JSPs).
+
+### 8. **Eclipse IDE Project Structure**
+- The project uses Eclipse-specific configuration files and natures, indicating it is developed in Eclipse IDE.
+
+---
+
+## Key Concepts
+
+### 1. **MVC (Model-View-Controller) Pattern**
+- **Model:** Java classes like `User.java`, `Order.java`, `Fuel.java`, etc.
+- **View:** JSP files for rendering UI.
+- **Controller:** Servlets handle HTTP requests and responses.
+
+### 2. **Session Management**
+- User sessions are managed using `HttpSession` (e.g., storing user info after login).
+
+### 3. **Authentication & Authorization**
+- Login and registration logic is handled in servlets.
+- User roles (e.g., admin) are managed via session attributes.
+
+### 4. **Form Handling**
+- HTML forms in JSPs submit data to servlets for processing (e.g., login, order, report submission).
+
+### 5. **Database CRUD Operations**
+- The `DBConnector` class provides methods for adding, updating, and querying data in the database.
+
+### 6. **Component Reuse**
+- JSP fragments (e.g., `header.jsp`, `footer.jsp`, `loginfragment.jsp`) are included in multiple pages for consistent layout.
+
+### 7. **Servlet Annotations**
+- Servlets use `@WebServlet` for URL mapping.
+
+### 8. **Security Concepts**
+- Passwords are handled with hashing and (optionally) salting (see `LoginServlet.java`).
+
+---
+
+## Summary Table
+
+| Layer         | Technology/Concepts Used                                 |
+|---------------|---------------------------------------------------------|
+| Frontend      | JSP, HTML, CSS, JavaScript                              |
+| Backend       | Java 21, Jakarta EE Servlets, JDBC                      |
+| Database      | MySQL, MySQL Connector/J                                |
+| Server        | Apache Tomcat 10.x                                      |
+| IDE/Build     | Eclipse IDE, Eclipse Facets, Project Natures            |
+| Patterns      | MVC, Session Management, Authentication, CRUD           |
+| Reusability   | JSP Includes/Fragments                                  |
+
+---
+
+If you want a deeper dive into any specific area (e.g., authentication flow, database schema, or how a particular feature works), let me know!
+
+ChatGpt Portfolio ================
+
+This project is a full-stack web application developed using Java (JDK 21), JSP, and Jakarta EE Servlets, designed to manage fuel orders and user operations within a structured and secure environment. Built following the MVC (Model-View-Controller) architecture, the application separates concerns between the data layer, business logic, and presentation layer. The frontend is crafted using JSP, HTML, CSS, and JavaScript, while the backend leverages Java Servlets and JDBC for seamless interaction with a MySQL database. Key features include user authentication, role-based access (admin/user), session management, dynamic form handling, and full CRUD operations. The project runs on Apache Tomcat 10 and is developed using Eclipse IDE, ensuring a modular, reusable, and scalable structure with support for JSP fragments and deployment descriptors. This system highlights my ability to design, develop, and deploy enterprise-grade web solutions using standard Java EE technologies.
